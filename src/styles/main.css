@@ -82,12 +82,48 @@ body {
 
 /** ========= CHECKBOX ========= **/
 
+.page-wrapper .checkbox {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.page-wrapper .checkbox:checked {
+  background-color: #2469f6;
+  opacity: 1;
+}
+
+.page-wrapper .checkbox:hover {
+  background-color: transparent;
+  opacity: 1;
+}
+
+.page-wrapper .checkbox:checked:hover {
+  background-color: #5087f8;
+  opacity: 1;
+}
+
 .page-wrapper:hover .checkbox {
-  background-color: #2469f6; /* Change background color on hover */
+  background-color: transparent;
 }
 
 .page-wrapper:hover .checkbox::before {
-  opacity: 0.6; /* Show checkmark with 60% opacity on hover */
+  opacity: 1;
+}
+
+.page-wrapper:hover .checkbox:checked {
+  background-color: #5087f8;
+}
+
+.page-wrapper .checkbox::before {
+  opacity: 0;
+}
+
+.page-wrapper .checkbox:checked::before {
+  opacity: 1;
+}
+
+.page-wrapper .checkbox:hover::before {
+  opacity: 1;
 }
 
 .checkbox {
@@ -95,7 +131,7 @@ body {
   height: 23px;
   border: 1px solid #cdcdcd;
   border-radius: 6px;
-  background: #ffffff;
+  background: transparent;
   cursor: pointer;
   position: relative;
   appearance: none;
@@ -112,7 +148,7 @@ body {
   left: 50%;
   width: 8px;
   height: 14px;
-  border: 0.5px solid #fff;
+  border: 0.5px solid #cdcdcd;
   border-width: 0 1px 1px 0;
   vertical-align: middle;
   transform: translate(-50%, -65%) rotate(45deg);
@@ -120,11 +156,11 @@ body {
 }
 
 .checkbox:hover {
-  background-color: #2469f6;
+  background-color: transparent;
 }
 
 .checkbox:hover::before {
-  opacity: 0.6;
+  opacity: 1;
 }
 
 .checkbox:checked {
@@ -133,8 +169,8 @@ body {
 }
 
 .checkbox:hover:checked {
-  background-color: #2469f6;
-  opacity: 0.6;
+  background-color: #5087f8;
+  opacity: 1;
 }
 .checkbox:checked::before {
   opacity: 1;
