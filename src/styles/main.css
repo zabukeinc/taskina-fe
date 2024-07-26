@@ -61,7 +61,7 @@ body {
 
 .footer {
   height: 60px;
-  opacity: 0px;
+  opacity: 1;
   margin: 0 auto;
 }
 
@@ -76,7 +76,7 @@ body {
   border-radius: 4px;
 }
 
-  .button:hover {
+.button:hover {
   background: #ffd84d;
 }
 
