@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 
 /**
  * Renders a filter header All Pages a checkbox and its name.
